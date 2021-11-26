@@ -13,7 +13,7 @@
                    <HBox class="cls-hbox">	
 							<GenericTile cd:key="PRApproval" header="Approve Purchase Requisition" press="press" class="sapUiMediumMargin sapUiTinyMarginTop">
 								<TileContent footer="Pending for Approval">
-									<NumericContent value="7" icon="sap-icon://request"/>
+									<NumericContent value="5" icon="sap-icon://request"/>
 								</TileContent>
 							</GenericTile>
 							<GenericTile cd:key="InvoiceApproval" header="Approve Invoice" press="press" class="sapUiMediumMargin sapUiTinyMarginTop">
