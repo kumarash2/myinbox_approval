@@ -1,0 +1,34 @@
+<mvc:View controllerName="MIA.myinboxap.controller.DetailView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Page showNavButton="true" navButtonPress="onNavback">
+		<content >
+				<IconTabBar id="idTab" class="sapUiResponsiveContentPadding" selectedKey="PRApproval">
+            <items>
+				<IconTabFilter text="{i18n>PRAppTab}" key="PRApproval">
+                
+					<!--<core:Fragment fragmentName="MIA.myinboxap.Fragments.PRApproval" type="XML"/>-->
+                     <core:Fragment fragmentName="MIA.myinboxap.Fragments.PRApproval" type="XML"/>
+				</IconTabFilter>
+				<IconTabFilter text="{i18n>invoiceAppTab}" key="InvoiceApproval">
+                <core:Fragment fragmentName="MIA.myinboxap.Fragments.InvoiceApproval" type="XML"/>
+                </IconTabFilter>
+				<IconTabFilter text="{i18n>creditApTab}" key="CreditApproval">
+                 <core:Fragment fragmentName="MIA.myinboxap.Fragments.CreditNoteApproval" type="XML"/>
+                </IconTabFilter>
+				
+                </items>
+			</IconTabBar>
+		<!--	<SegmentedButton selectedKey="satellite" class="sapUiSmallMarginBottom">
+				<items>
+					<SegmentedButtonItem width="20%" text="Purchase Requisition (3)"/>
+					<SegmentedButtonItem width="20%" text="Invoice (9)"/>
+					<SegmentedButtonItem width="20%" text="Credit Note (20)"/>
+					<SegmentedButtonItem width="20%" text="Requisition Coding (12)"/>
+					<SegmentedButtonItem width="20%" text="Invoice Coding (24)"/>
+					<SegmentedButtonItem width="20%" text="Credit Note Coding (2)"/>
+				</items>
+			</SegmentedButton>-->
+		</content >
+	</Page>
+</mvc:View>
